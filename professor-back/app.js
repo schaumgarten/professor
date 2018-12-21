@@ -62,11 +62,15 @@ const auth = require('./routes/auth');
 const courses = require('./routes/courses');
 const evaluations = require('./routes/evaluations');
 const enrollments = require('./routes/enrollments');
+const sessions = require('./routes/sessions')
 app.use('/', index);
 app.use('/api/auth/', auth);
 app.use('/api/courses', courses);
 app.use('/api/enrollments',enrollments);
 app.use('/api/evaluations',evaluations );
+app.use('/api/sessions',sessions);
+
+app.all('/*');
 
 
 module.exports = app;

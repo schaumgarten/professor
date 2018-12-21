@@ -30,3 +30,62 @@
     transform: rotate(360deg);
   }
 }
+
+.blue-background {
+  background-color: #001f54 !important;
+}
+
+.clear-background {
+  background-color: #eaf2ef;
+}
+
+.red-background {
+  background-color: #ae2e28;
+}
+
+.yellow-text{
+  color: #e3b505;
+}
+
+.clear-text{
+  color: #eaf2ef;
+}
+
+.dark-text {
+  color: #122c34;
+}
+
+blue-text {
+  color: #001f54;
+}
+
+.logo{
+  height: 50%;
+}
+
+.bordered{
+  border-width: 1px ;
+  border-color: white;
+  border-style: solid;
+}
+
+.container2 {
+  background: #eaf2ef;
+  padding: 20px 25px;
+  border: 5px solid #e3b505;
+  width: 550px;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+label{
+  color: #122c34;
+}
+
+.home-image {
+  max-width: 100%;
+
+}

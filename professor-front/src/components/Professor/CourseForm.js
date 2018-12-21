@@ -38,8 +38,8 @@ class CourseForm extends Component {
                         Course title:
                         <input type="text" name="title" onChange={this.handleChange}/>
                     </label>
-                    <button type="submit">Create</button>
-                    <Link to="/profile"><button>Cancel</button></Link>
+                    <button type="submit" className="btn">Create</button>
+                    <Link to="/profile"><button className="btn">Cancel</button></Link>
                 </form>
             </div>
         )

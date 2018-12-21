@@ -36,7 +36,56 @@ class Register extends Component {
         return(
             <div>
                 <Navbar/>
-                <form onSubmit={this.handleSubmit}>
+                <div className="container2">
+                    <div className="row">
+                        <form className="col s12" id="reg-form" onSubmit={this.handleSubmit}>
+                            <div className="row">
+                                <div className="input-field col s12">
+                                    <input id="name" name="name" type="text" className="validate" minLength="6" onChange={this.handleChange} required/>
+                                        <label htmlFor="name">Name</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col s12">
+                                    <input id="email" name="email" type="email" className="validate" minLength="6" onChange={this.handleChange} required/>
+                                        <label htmlFor="email">Email</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col s12">
+                                    <input id="password" name="password" type="password" onChange={this.handleChange} required/>
+                                        <label htmlFor="password">Password</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col s12">
+                                    <input id="confirm-password" name="confirmPassword" type="password" className="validate" minLength="6" onChange={this.handleChange}  required/>
+                                        <label htmlFor="confirm-password">Confirm password</label>
+                                </div>
+                            </div>
+
+                                <div className="input-field col s12">
+                                    <button className="btn btn-large btn-register blue-background waves-effect waves-light center"
+                                            type="submit" name="action">Register
+
+                                    </button>
+                                </div>
+
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+
+
+        )
+    }
+}
+
+
+export default Register;
+
+{/* <form onSubmit={this.handleSubmit}>
                     <label>
                         Name:
                         <input name='name' type="text" onChange={this.handleChange}/>
@@ -53,7 +102,7 @@ class Register extends Component {
                         Confirm Password:
                         <input name='confirmPassword' type="password" onChange={this.handleChange}/>
                     </label>
-                    {/*agregar rol*/}
+                    agregar rol
                     <div>
                         <label> You are a:</label>
                         <label> Student
@@ -63,13 +112,6 @@ class Register extends Component {
                             <input name="role" type="radio" value="professor" onClick={this.handleChange}/>
                         </label>
                     </div>
-                    <button type='submit'>Register</button>
+                    <button className="btn" type='submit'>Register</button>
                 </form>
-            </div>
-
-        )
-    }
-}
-
-
-export default Register;
+            </div>*/}

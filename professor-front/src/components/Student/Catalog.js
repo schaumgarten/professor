@@ -73,7 +73,7 @@ class Catalog extends Component {
                         <li>
                             <strong>{course.title}</strong> Professor: {course._professor.name}
                             {availableCourses.includes(course._id) ?
-                                <button value={course._id} onClick={this.handleEnroll}>Enroll</button>
+                                <button className="btn" value={course._id} onClick={this.handleEnroll}>Enroll</button>
                                 :<strong>  Enrolled</strong>
                                 }
 

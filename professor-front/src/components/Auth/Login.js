@@ -31,17 +31,33 @@ class Login extends Component {
         return(
             <div>
                 <Navbar/>
-                <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="">
-                        E-mail:
-                        <input name="email" type="text" onChange={this.handleChange}/>
-                    </label>
-                    <label htmlFor="">
-                        Password:
-                        <input name="password" type="password" onChange={this.handleChange}/>
-                    </label>
-                    <button type='submit'>Login</button>
-                </form>
+                <div className="container2">
+                    <div className="row">
+                        <form className="col s12" id="reg-form" onSubmit={this.handleSubmit}>
+
+                            <div className="row">
+                                <div className="input-field col s12">
+                                    <input id="email" name="email" type="email" className="validate" minLength="6" onChange={this.handleChange} required/>
+                                    <label htmlFor="email">Email</label>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="input-field col s12">
+                                    <input id="password" name="password" type="password" onChange={this.handleChange} required/>
+                                    <label htmlFor="password">Password</label>
+                                </div>
+                            </div>
+
+                            <div className="input-field col s12">
+                                <button className="btn btn-large btn-register blue-background waves-effect waves-light center"
+                                        type="submit" name="action">Login
+
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
             </div>
         )
     }

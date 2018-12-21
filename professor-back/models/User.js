@@ -21,20 +21,6 @@ const userSchema = new Schema({
     },
     profilePic: String,
 
-
-    enrolledCourses: [{
-        _id: false,
-        _course: {
-            type: Schema.Types.ObjectId,
-            ref: 'Course'
-        },
-        confirmed: {
-            type:Boolean,
-            default: false
-        },
-        gradesAvg: Number,
-        attendance: Number
-    }]
 });
 
 module.exports= mongoose.model('User',userSchema);

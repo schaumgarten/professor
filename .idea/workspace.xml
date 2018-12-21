@@ -2,19 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb95bdc8-098d-4207-b25b-7e942475e12a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/professor-back/routes/enrollments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/professor-back/routes/sessions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/professor-front/public/js/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/professor-front/public/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/professor-front/public/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/professor-front/src/components/Professor/CourseView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/professor-back/models/Enrollment.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/models/Enrollment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-back/models/Session.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/models/Session.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-back/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-back/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-back/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/routes/courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/professor-front" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/professor-front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-back/routes/enrollments.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/routes/enrollments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-back/routes/evaluations.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-back/routes/evaluations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-front/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/src/components/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/src/components/Auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Auth/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/src/components/Home/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Home/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/src/components/Professor/ProfessorProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Professor/ProfessorProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-front/src/components/Student/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Student/Catalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professor-front/src/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/src/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professor-front/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/professor-front/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,45 +43,62 @@
     <session id="-1195524413">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.58" value="2" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="6" />
           <entry key="env" value="1" />
-          <entry key="js" value="65" />
+          <entry key="html" value="3" />
+          <entry key="jpg" value="5" />
+          <entry key="js" value="119" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
+          <entry key="CSS" value="6" />
+          <entry key="HTML" value="3" />
+          <entry key="Image" value="5" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="65" />
+          <entry key="JavaScript" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="15706" />
+          <entry key="css" value="495" />
+          <entry key="html" value="82" />
+          <entry key="js" value="22276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="15706" />
+          <entry key="CSS" value="495" />
+          <entry key="HTML" value="82" />
+          <entry key="JavaScript" value="22276" />
         </counts>
       </usages-collector>
     </session>
@@ -75,37 +106,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-back/routes/courses.js">
+        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/professor-back/routes/enrollments.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-back/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-front/src/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="483">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -113,8 +117,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="25" column="166" selection-start-line="25" selection-start-column="123" selection-end-line="25" selection-end-column="166" />
+            <state relative-caret-position="-345">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Admin/AdminProfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Navbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-23">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -122,62 +147,55 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Profile.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js">
+        <entry file="file://$PROJECT_DIR$/professor-front/public/rawpixel-660721-unsplash.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/professor-front/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="116">
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-front/src/components/Student/Catalog.js">
+        <entry file="file://$PROJECT_DIR$/professor-front/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="73" column="85" lean-forward="true" selection-start-line="73" selection-start-column="85" selection-end-line="73" selection-end-column="85" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-front/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/professor-front/src/Router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="138">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/professor-front/public/js/init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/professor-front/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1061">
+              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -188,6 +206,7 @@
     <findStrings>
       <find>in</find>
       <find>findById</find>
+      <find>container</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,29 +217,36 @@
       <list>
         <option value="$PROJECT_DIR$/professor-back/.env" />
         <option value="$PROJECT_DIR$/professor-back/models/Evaluation.js" />
-        <option value="$PROJECT_DIR$/professor-back/routes/evaluations.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/index.js" />
-        <option value="$PROJECT_DIR$/professor-back/routes/auth.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Auth/Register.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Auth/Login.js" />
         <option value="$PROJECT_DIR$/professor-front/src/components/Professor/Profile.js" />
-        <option value="$PROJECT_DIR$/professor-back/models/Session.js" />
         <option value="$PROJECT_DIR$/professor-back/models/Course.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Home/Navbar.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Professor/ProfessorProfile.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Home/Profile.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/professor-back/models/User.js" />
         <option value="$PROJECT_DIR$/professor-back/models/Enrollment.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/Router.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/App.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/components/Student/Catalog.js" />
+        <option value="$PROJECT_DIR$/professor-back/routes/evaluations.js" />
+        <option value="$PROJECT_DIR$/professor-back/routes/sessions.js" />
+        <option value="$PROJECT_DIR$/professor-back/models/Session.js" />
         <option value="$PROJECT_DIR$/professor-back/routes/courses.js" />
+        <option value="$PROJECT_DIR$/professor-back/models/User.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/App.js" />
         <option value="$PROJECT_DIR$/professor-back/app.js" />
-        <option value="$PROJECT_DIR$/professor-front/src/service.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Student/Catalog.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Professor/ProfessorProfile.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js" />
+        <option value="$PROJECT_DIR$/professor-front/public/init.js" />
+        <option value="$PROJECT_DIR$/professor-back/routes/auth.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Auth/Login.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Auth/Register.js" />
         <option value="$PROJECT_DIR$/professor-back/routes/enrollments.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/Router.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/service.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Home/Profile.js" />
+        <option value="$PROJECT_DIR$/professor-front/public/js/init.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Professor/CourseView.js" />
+        <option value="$PROJECT_DIR$/professor-front/public/index.html" />
+        <option value="$PROJECT_DIR$/professor-front/src/index.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Admin/AdminProfile.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/App.css" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Home/Navbar.js" />
+        <option value="$PROJECT_DIR$/professor-front/src/components/Home/Home.js" />
       </list>
     </option>
   </component>
@@ -273,12 +299,31 @@
               <item name="professor" type="b2602c69:ProjectViewProjectNode" />
               <item name="professor" type="462c0819:PsiDirectoryNode" />
               <item name="professor-back" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="professor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="professor" type="462c0819:PsiDirectoryNode" />
+              <item name="professor-back" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="professor" type="b2602c69:ProjectViewProjectNode" />
               <item name="professor" type="462c0819:PsiDirectoryNode" />
               <item name="professor-front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="professor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="professor" type="462c0819:PsiDirectoryNode" />
+              <item name="professor-front" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="professor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="professor" type="462c0819:PsiDirectoryNode" />
+              <item name="professor-front" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="professor" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +337,14 @@
               <item name="professor-front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="professor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="professor" type="462c0819:PsiDirectoryNode" />
+              <item name="professor-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="professor" type="b2602c69:ProjectViewProjectNode" />
@@ -334,9 +387,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parallax-template" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/professor-front/public" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -375,12 +433,23 @@
       <workItem from="1544746916825" duration="811000" />
       <workItem from="1544748372462" duration="7731000" />
       <workItem from="1544826820063" duration="4127000" />
-      <workItem from="1544891002889" duration="5642000" />
+      <workItem from="1544891002889" duration="20105000" />
+      <workItem from="1545006573573" duration="2040000" />
+      <workItem from="1545014813735" duration="978000" />
+      <workItem from="1545144111802" duration="3763000" />
+      <workItem from="1545147924552" duration="285000" />
+      <workItem from="1545151418778" duration="5208000" />
+      <workItem from="1545156660595" duration="3645000" />
+      <workItem from="1545174033952" duration="1733000" />
+      <workItem from="1545229096134" duration="831000" />
+      <workItem from="1545232947478" duration="4241000" />
+      <workItem from="1545322686963" duration="4307000" />
+      <workItem from="1545354471164" duration="5186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78799000" />
+    <option name="totallyTimeSpent" value="125479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -397,7 +466,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4996277" visible="true" weight="0.32569557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4996277" visible="true" weight="0.31181103" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -437,20 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-back/models/Evaluation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-back/routes/evaluations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/professor-front/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -458,68 +513,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/index.js">
+    <entry file="file://$PROJECT_DIR$/professor-back/routes/sessions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="298">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="26" selection-end-line="34" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-back/routes/auth.js">
+    <entry file="file://$PROJECT_DIR$/professor-back/models/Evaluation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="575">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Auth/Register.js">
+    <entry file="file://$PROJECT_DIR$/professor-back/routes/evaluations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-943">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/professor-back/models/Session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Auth/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Professor/ProfessorProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -530,64 +548,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/professor-back/routes/courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/tra-nguyen-459276-unsplash.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/rawpixel-783348-unsplash.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/nathan-dumlao-572047-unsplash.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-back/routes/enrollments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Auth/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1403">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78890">
+          <caret line="3430" column="10" selection-start-line="3430" selection-start-column="1" selection-end-line="3430" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-back/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="69" column="41" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/professor-back/models/Enrollment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="322">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-back/routes/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1059">
+          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/professor-back/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="207">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Profile.js">
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Professor/CourseView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Professor/CourseForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="25" column="166" selection-start-line="25" selection-start-column="123" selection-end-line="25" selection-end-column="166" />
+        <state relative-caret-position="1081">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -596,39 +640,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/professor-front/src/components/Student/Catalog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="73" column="85" lean-forward="true" selection-start-line="73" selection-start-column="85" selection-end-line="73" selection-end-column="85" />
+        <state relative-caret-position="1633">
+          <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Auth/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Professor/ProfessorProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Student/StudentProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1061">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Admin/AdminProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-back/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/professor-front/public/rawpixel-660721-unsplash.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/professor-front/src/service.js">
+    <entry file="file://$PROJECT_DIR$/professor-front/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-back/routes/courses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professor-back/routes/enrollments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="115">
+          <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
         </state>
       </provider>
     </entry>

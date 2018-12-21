@@ -13,6 +13,7 @@ class ProfessorProfile extends Component {
 
 
     componentWillMount() {
+        console.log(this.props)
         const {user, courses} = this.props;
         const {ownedCourses} = this.state;
         courses.forEach(course => {
@@ -28,9 +29,9 @@ class ProfessorProfile extends Component {
 
                 <h1>Courses</h1>
                 <ul>
-                    {this.state.ownedCourses.map(course => (<li>{course.title}</li>))}
+                    {this.state.ownedCourses.map(course => (<li><Link to='/course-view' onClick={() => this.props.change(course)}>{course.title}</Link></li>))}
                 </ul>
-                <Link to='/new-course'> <button>Create new course</button></Link>
+                <Link to='/new-course'> <button className="btn">Create new course</button></Link>
             </div>
 
 

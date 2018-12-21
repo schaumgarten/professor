@@ -23,7 +23,7 @@ class StudentProfile extends Component {
             <div>
                 <h1>{this.props.user.name}</h1>
                 <ul>
-                    {this.props.courses.map((course, index) => <li key={index}> <strong> {course._course.title} </strong>  Professor: {course._course._professor.name} </li>)}
+                    {this.props.courses.map((course, index) => <li key={index}> <strong> {course._course.title} </strong> Professor:  {course._course._professor.name} </li>)}
                 </ul>
                 <Link to='/catalog' > Course Catalog </Link>
                 {/*<Link

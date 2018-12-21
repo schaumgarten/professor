@@ -11,7 +11,7 @@ router.post('/register',(req, res) => {
     const hashedPassword = bcrypt.hashSync(req.body.password, salt);
     const {name,email,role} = req.body;
 
-    User.create({name,email,role,password:hashedPassword})
+    User.create({name,email,password:hashedPassword})
         .then(()=> {
             res.status(201).json({msg: "Usuario creado con éxito"})
 
@@ -36,6 +36,46 @@ router.post('/login', async(req,res)=> {
       //desaparece el password de user
     delete user._doc.password;
     res.status(200).json({user,token});
+});
+
+router.get('/', (req,res) => {
+    User.find()
+        .then(users => {
+            res.status(200).json({users})
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
+
+router.get('/:id', (req, res) => {
+    User.findById(req.params.id)
+        .then(user => {
+            res.status(200).json({user})
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
+
+router.patch('/:id',(req, res) =>{
+    User.findByIdAndUpdate(req.params.id,req.body,{new:true})
+        .then(() => {
+            res.status(200).json({msg: "Usuario modificado con éxito"});
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
+
+router.delete('/:id', (req, res) => {
+    User.findByIdAndRemove(req.params.id)
+        .then(() => {
+            res.status(200).json({msg: "Usuario eliminado con éxito"});
+        })
+        .catch(err => {
+            console.log(err);
+        })
 });
 
 

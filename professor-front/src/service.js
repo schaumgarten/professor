@@ -59,4 +59,26 @@ export const joinCourse = (id, user, history) => {
         })
 };
 
+export const getUsers = () => {
+    return axios.get(`${base_url}/auth/`)
+};
+
+/*export const getStudents = (id) => {
+   return axios.get(`${base_url}/courses/course/${id}`)
+       .then(res => console.log('======> ', res))
+       .catch(err=>console.log(err))
+        /!*.then(res => {
+            const enrollments = res.data.enrollments;
+            const students = []
+            enrollments.forEach(enrollment => {
+                students.push(enrollment._student)
+            });
+            console.log('=====>', students);
+            return students;
+        })
+        .catch(err => {
+            console.error(err);
+        })*!/
+};*/
+
 

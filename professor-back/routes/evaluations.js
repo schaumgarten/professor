@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Evaluation = require('../models/Evaluation');
-const Course = require('../models/Course')
+
 
 router.post('/new', (req, res) => {
     Evaluation.create(req.body)
@@ -36,5 +36,26 @@ router.get('/course/:id', (req, res) => {
             res.status(500).json({err, msg: "algo no sirve"})
         })
 });
+
+router.patch('/:id',(req, res) =>{
+  Evaluation.findByIdAndUpdate(req.params.id,req.body,{new:true})
+      .then(() => {
+          res.status(200).json({msg: "Evaluación modificada con éxito"});
+      })
+      .catch(err => {
+          console.log(err);
+      })
+});
+
+router.delete('/:id', (req, res) => {
+    Evaluation.findByIdAndRemove(req.params.id)
+        .then(() => {
+            res.status(200).json({msg: "Evaluación eliminada con éxito"});
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
+
 
 module.exports = router;

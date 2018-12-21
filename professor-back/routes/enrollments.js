@@ -17,7 +17,7 @@ router.post('/join/:id', (req, res) => {
 
 router.patch('/confirm/:id',(req,res) => {
     const course = req.params.id;
-    Enrollment.updateOne({"_id":req.body._id, "enrolledCourses._course": course},{$set: {"enrolledCourses.$.confirmed": true}})
+    Enrollment.updateOne({"_student":req.body._id, "_course": course},{$set: {"confirmed": true}})
         .then(() => {
             res.status(200).json({msg: "Alumno confirmado con éxito"})
         })
@@ -34,6 +34,8 @@ router.delete('delete/:id',(req, res) => {
         .catch(err => {
             console.log(err);
         })
-})
+});
+
+
 
 module.exports = router;

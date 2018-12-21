@@ -10,8 +10,10 @@ const sessionSchema = new Schema({
     activities: Array,
     materials: Array,
     attendance: [{
-        _student: Schema.Types.ObjectId,
-        ref: 'User',
+        _student: {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        },
         attended: Boolean
     }]
 });
