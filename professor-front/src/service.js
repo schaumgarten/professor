@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-
-const base_url = "http://localhost:3000/api";
+//const base_url = 'http://localhost:3000/api';
+const base_url = (window.location.hostname === "http://localhost:3001") ? "http://localhost:3000/api" : 'http://professor2018.herokuapp.com/api' ;
 
 export const login = (auth,history) => {
     axios.post(`${base_url}/auth/login`, auth)
@@ -28,11 +28,11 @@ export const register = (auth,history) => {
         })
 };
 
-export const createCourse = (title,user,history) => {
-    axios.post(`${base_url}/courses/new`, {title, user})
+export const createCourse = (title,user) => {
+   return axios.post(`${base_url}/courses/new`, {title, user})
         .then(res=> {
             console.log(res)
-            history.push("/profile")
+           //history.push("/profile")
 
         })
         .catch (err => {
@@ -61,6 +61,10 @@ export const joinCourse = (id, user, history) => {
 
 export const getUsers = () => {
     return axios.get(`${base_url}/auth/`)
+};
+
+export const patchRoles = (id,uroles) => {
+    return axios.patch(`${base_url}/auth/${id}`,uroles);
 };
 
 /*export const getStudents = (id) => {

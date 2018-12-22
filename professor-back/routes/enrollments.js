@@ -17,7 +17,7 @@ router.post('/join/:id', (req, res) => {
 
 router.patch('/confirm/:id',(req,res) => {
     const course = req.params.id;
-    Enrollment.updateOne({"_student":req.body._id, "_course": course},{$set: {"confirmed": true}})
+    Enrollment.updateOne({"_student":req.body._id, "_course": course},{$set: {"confirmed": true}},{new:true})
         .then(() => {
             res.status(200).json({msg: "Alumno confirmado con éxito"})
         })

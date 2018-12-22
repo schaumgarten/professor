@@ -33,16 +33,16 @@ class Login extends Component {
                 <Navbar/>
                 <div className="container2">
                     <div className="row">
-                        <form className="col s12" id="reg-form" onSubmit={this.handleSubmit}>
+                        <form  id="reg-form" onSubmit={this.handleSubmit}>
 
                             <div className="row">
-                                <div className="input-field col s12">
+                                <div className="input-field col s12 m9">
                                     <input id="email" name="email" type="email" className="validate" minLength="6" onChange={this.handleChange} required/>
                                     <label htmlFor="email">Email</label>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="input-field col s12">
+                                <div className="input-field col s12 m9">
                                     <input id="password" name="password" type="password" onChange={this.handleChange} required/>
                                     <label htmlFor="password">Password</label>
                                 </div>

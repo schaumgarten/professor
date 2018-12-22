@@ -25,21 +25,24 @@ class CourseForm extends Component {
         e.preventDefault();
         const {title} = this.state;
         const user = JSON.parse(localStorage.getItem('user'));
-        createCourse(title,user,this.props.history);
+        createCourse(title,user,this.props.history)
+            .then(()=> {
+                this.props.uploadState()
+                    })
     };
 
     render(){
 
         return(
             <div>
-                <Navbar/>
+                {/*<Navbar/>*/}
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Course title:
                         <input type="text" name="title" onChange={this.handleChange}/>
                     </label>
-                    <button type="submit" className="btn">Create</button>
-                    <Link to="/profile"><button className="btn">Cancel</button></Link>
+                    <button type="submit"  className="btn modal-close">Create</button>
+                    <Link to="/profile"><button className="btn modal-close">Cancel</button></Link>
                 </form>
             </div>
         )

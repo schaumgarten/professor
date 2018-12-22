@@ -11,29 +11,54 @@ class Profile extends Component {
         super(props);
         this.state = {
             user: {},
-            courses: []
+            courses: [],
+            ownedCourses: []
+
         }
     }
 
 
 
-    componentWillMount() {
+    componentDidMount() {
+        this.uploadState();
+    }
+
+    uploadState = () => {
+        this.getCourses()
+            .then(() => {
+                console.log(this.props)
+                const {user, courses} = this.state;
+                //const {ownedCourses} = this.state;
+                const ownedCourses = [];
+                courses.forEach(course => {
+                    if (course._professor === user._id) ownedCourses.push(course)
+                });
+                this.setState({ownedCourses})
+                console.log(ownedCourses)
+            })
+
+    };
+
+
+    getCourses = () => {
+
         const currentUser = JSON.parse(localStorage.getItem('user'));
 
-        getCourses(currentUser._id)
+        return getCourses(currentUser._id)
             .then(res => {
-
+                console.log("res", res)
                 this.setState({courses:res.data.courses, user: currentUser});
             })
-    }
+
+    };
 
     renderProfileComponent = () => {
         const role = this.state.user.role;
         if (role === "professor"){
-            return <ProfessorProfile courses={this.state.courses} user={this.state.user} change={this.props.change}/>
+            return <ProfessorProfile ownedCourses={this.state.ownedCourses} uploadState={this.uploadState} getCourses={this.getCourses} courses={this.state.courses} user={this.state.user} change={this.props.change}/>
         } else if (role === "student"){
             return <StudentProfile user={this.state.user} courses={this.state.courses}/>
-        } else {
+        } else if (role === "admin") {
             return <AdminProfile/>
         }
 
