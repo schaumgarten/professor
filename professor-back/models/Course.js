@@ -9,7 +9,9 @@ const courseSchema = new Schema ({
     _professor: {
         type: Schema.Types.ObjectId,
         ref: 'User'
-    }
+    },
+    evaluationCriteria: Array
+
 
     // resolver!!!! evaluationCriteria:
 });

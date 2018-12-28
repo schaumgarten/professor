@@ -1,4 +1,4 @@
-/* (function($){
+/*(function($){
     $(function(){
 
         $('.sidenav').sidenav();
@@ -6,7 +6,7 @@
         $('select').material_select();
 
     }); // end of document ready
-})(jQuery); // end of jQuery name space */
+})(jQuery); // end of jQuery name space*/
 
 
 

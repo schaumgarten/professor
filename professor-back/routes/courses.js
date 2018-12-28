@@ -7,8 +7,8 @@ const Enrollment = require('../models/Enrollment');
 
 router.post('/new',(req, res) => {
 
-    const {title, user} = req.body;
-    Course.create({title, _professor: user._id})
+    const {title, user, evalFields} = req.body;
+    Course.create({title, _professor: user._id, evaluationCriteria: evalFields})
         .then(() => {
             res.status(201).json({msg: "Curso creado con éxito"});
         })
