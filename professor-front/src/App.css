@@ -55,8 +55,12 @@
   color: #122c34;
 }
 
-blue-text {
+.blue-text-mine {
   color: #001f54;
+}
+
+.red-text {
+  color: #ae2e28;
 }
 
 .logo{

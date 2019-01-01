@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Navbar from "../Home/Navbar";
 import {createCourse} from "../../service";
 
 class CourseForm extends Component {
@@ -9,16 +8,15 @@ class CourseForm extends Component {
         this.state = {
             title: '',
             evalFields: [],
-            fieldsCounter: 0,
-            error: null,
-            ready: null,
-            authorizeCreate: false
+            error: '',
+            ready: '',
+            authorizeCreate: false,
+            checkbox: ''
         }
     }
 
     handleChange = (e) => {
-        let {title} = this.state;
-        title = e.target.value;
+        let title = e.target.value;
         this.setState({title});
 
     };
@@ -33,7 +31,7 @@ class CourseForm extends Component {
         if (type === "text"){
             var field = "name";
         } else {
-            var field = "percentage";
+            field = "percentage";
         }
         object[field] = value;
         evalFields.splice(index,1,object);
@@ -42,22 +40,24 @@ class CourseForm extends Component {
         if (total === 100){
             authorizeCreate = true;
             ready = "modal-close";
+        } else {
+            authorizeCreate = false;
+            ready = '';
         }
         this.setState({evalFields, authorizeCreate, ready});
     };
 
     addField = () => {
-        let counter = this.state.fieldsCounter;
+        //let counter = this.state.fieldsCounter;
         let {evalFields} = this.state;
         const newField = {
           name:'',
-          percentage:null,
-          inSession: false,
-          key: counter
+          percentage:0,
+          inSession: false
         };
         evalFields.push(newField);
-        counter ++;
-        this.setState({evalFields, fieldsCounter: counter});
+        //counter ++;
+        this.setState({evalFields});
 
     };
 
@@ -67,12 +67,17 @@ class CourseForm extends Component {
         if (this.state.authorizeCreate){
             this.handleSubmit()
         } else {
-            this.setState({error:"The evaluation fields don't add to 100%"})
+            this.setState({error:"The evaluation fields must add to 100%"})
 
         }
     };
 
-
+    handleToggleCheck = (e) => {
+        const index = e.target.name;
+        const evalFields = this.state.evalFields;
+        evalFields[index].inSession = !evalFields[index].inSession;
+        this.setState({evalFields});
+    };
 
 
     handleSubmit = () => {
@@ -99,7 +104,11 @@ class CourseForm extends Component {
                        <div>
                            <input type="text" onChange={this.handleFieldChange} value={field.name} name={index} key={index}/>
                            <input type = "number"  onChange={this.handleFieldChange} value={field.percentage} name={index} key={index + "b"}/ >
-                           {/*<input type = "checkbox" {field.inSession ? checked : null}/>*/}
+                           <label>
+                               <input name={index} key={index + 'c'} type = "checkbox" onChange={this.handleToggleCheck} checked={field.inSession ? true : false}/>
+                               <span>In-session evaluation?</span>
+                           </label>
+
                        </div>
 
                    ) : console.log('perro') }

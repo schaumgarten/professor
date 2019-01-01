@@ -11,9 +11,6 @@ const courseSchema = new Schema ({
         ref: 'User'
     },
     evaluationCriteria: Array
-
-
-    // resolver!!!! evaluationCriteria:
 });
 
 module.exports = mongoose.model('Course',courseSchema);

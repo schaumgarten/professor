@@ -69,10 +69,31 @@ class CourseView extends Component {
             <div>
                 <Navbar/>
                 <h1>{this.props.state.course.title}</h1>
-                <h2>Confirmed students</h2>
-                {this.state.confirmedStudents.length > 0 ? this.state.confirmedStudents.map(student => <h3>{student.name}</h3>) : <p>Vacío</p>}
-                <h2>Pending students</h2>
-                {this.state.pendingStudents.map(student => <div> <h3>{student.name}</h3> <button onClick={()=>this.handleConfirm(student)}>Confirm</button> </div> )}
+                <div className="row">
+                    <div className="col s4">
+                        <ul className="collection with-header">
+                            <li className="collection-header"><h4 className="blue-text-mine">Confimed Students</h4></li>
+                            {this.state.confirmedStudents.length > 0 ? this.state.confirmedStudents.map(student => <li className="collection-item">
+                                <div>{student.name}<a href="#!" className="secondary-content"><i
+                                    className="material-icons red-text">delete</i></a></div>
+                            </li>) : <li className="collection-item">Vacío</li>}
+                            <li className="collection-header"><h4 className="blue-text-mine">Pending Students</h4></li>
+                            {this.state.pendingStudents.map(student => <li className="collection-item">
+                                <div>{student.name}<a href="#!" className="secondary-content"><i
+                                    className="material-icons blue-text-mine" onClick={()=>this.handleConfirm(student)}>add</i></a></div>
+                            </li>)}
+                        </ul>
+                    </div>
+                    <div className="col s4">
+                        <ul className="collection with header">
+                            <li className="collection-header"><h4 className="blue-text-mine">Sessions</h4><a href="#!" className="secondary-content"><i
+                                className="material-icons blue-text-mine">add</i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
             </div>
         )
     }
