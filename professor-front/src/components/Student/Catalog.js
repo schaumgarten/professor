@@ -68,17 +68,23 @@ class Catalog extends Component {
         return(
             <div>
                 <Navbar/>
-                <ul>
-                    {this.state.courses.map(course =>
-                        <li>
-                            <strong>{course.title}</strong> Professor: {course._professor.name}
-                            {availableCourses.includes(course._id) ?
-                                <button className="btn" value={course._id} onClick={this.handleEnroll}>Enroll</button>
-                                :<strong>  Enrolled</strong>
+                <div className="container">
+                    <ul className="collection with-header">
+                        <li className="collection-header ">
+                            <h3 className="blue-text-mine">Courses</h3>
+                        </li>
+                        {this.state.courses.map(course =>
+                            <li className="collection-item">
+                                <strong>{course.title}</strong> Professor: {course._professor.name}
+                                {availableCourses.includes(course._id) ?
+                                    <button className="btn btn-small red-background secondary-content" value={course._id} onClick={this.handleEnroll}>Enroll</button>
+                                    :<strong>  Enrolled</strong>
                                 }
 
-                        </li>)}
-                </ul>
+                            </li>)}
+                    </ul>
+                </div>
+
             </div>
         )
     }

@@ -43,7 +43,6 @@ router.get('/course/:id', (req, res) => {
     Enrollment.find({"_course" : req.params.id})
         .populate('_student')
         .then(enrollments => {
-            console.log(enrollments);
             res.status(200).json({enrollments});
         })
         .catch(err => {

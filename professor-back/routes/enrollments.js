@@ -26,6 +26,17 @@ router.patch('/confirm/:id',(req,res) => {
         })
 });
 
+
+router.patch('/:id',(req,res) => {
+    Enrollment.findByIdAndUpdate(req.params.id,req.body,{new:true})
+        .then(() => {
+            res.status(200).json({msg: "Evaluación modificada con éxito"});
+        })
+        .catch(err => {
+            console.log(err);
+        })
+});
+
 router.delete('/:id',(req, res) => {
     Enrollment.findOneAndRemove({"_student": req.params.id})
         .then(()=> {

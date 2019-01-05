@@ -85,33 +85,3 @@ class Register extends Component {
 
 export default Register;
 
-{/* <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Name:
-                        <input name='name' type="text" onChange={this.handleChange}/>
-                    </label>
-                    <label>
-                        E-mail:
-                        <input name='email' type="text" onChange={this.handleChange}/>
-                    </label>
-                    <label>
-                        Password:
-                        <input name='password' type="password" onChange={this.handleChange}/>
-                    </label>
-                    <label>
-                        Confirm Password:
-                        <input name='confirmPassword' type="password" onChange={this.handleChange}/>
-                    </label>
-                    agregar rol
-                    <div>
-                        <label> You are a:</label>
-                        <label> Student
-                            <input name="role" type="radio" value="student" onClick={this.handleChange}/>
-                        </label>
-                        <label> Professor
-                            <input name="role" type="radio" value="professor" onClick={this.handleChange}/>
-                        </label>
-                    </div>
-                    <button className="btn" type='submit'>Register</button>
-                </form>
-            </div>*/}

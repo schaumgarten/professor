@@ -91,7 +91,7 @@ class CourseView extends Component {
 
     changeGrade = (grade, index) => {
         const {evaluations} = this.state;
-        evaluations[index].grade = grade;
+        evaluations[index].grade = parseInt(grade);
         this.setState({evaluations});
     };
 
@@ -117,8 +117,16 @@ class CourseView extends Component {
 ;       console.log(search);
         axios.get(`http://professor2018.herokuapp.com/api/evaluations/${type}/${search}`)
             .then(res => {
-                this.setState({evaluations: res.data.eval, fieldName:field.name, errorMessage:'',fieldType:type})
-                console.log(this.state.evaluations)
+                let evaluations = {};
+                if (type === "student") {
+
+                     evaluations = res.data.eval.filter(one => {
+                        return one._course === this.props.state.course._id
+                    })
+                } else {
+                     evaluations = res.data.eval
+                }
+                this.setState({evaluations, fieldName:field.name, errorMessage:'',fieldType:type})
             })
             .catch(err => {
                 console.log(err);
@@ -203,19 +211,19 @@ class CourseView extends Component {
                     <div className="col l4 m6 s12 ">
                         <ul className="collection with-header hoverable">
                             <li className="collection-header"><h4 className="blue-text-mine">Evaluation</h4></li>
-                            {this.props.state.course.evaluationCriteria.map(field => <li className="collection-item"><div>{field.name} {field.inSession ? <i className="secondary-content material-icons red-text">block</i> :<a href="#!" className="secondary-content"><i
+                            {this.props.state.course.evaluationCriteria.map(field => <li className="collection-item"><div>{field.name} {field.inSession ? <i className="secondary-content material-icons grey-text">mode_edit</i> :<a href="#!" className="secondary-content"><i
                                 data-target="modal1" className="material-icons red-text modal-trigger" onClick={()=>this.uploadEvaluations(field,"course")}>mode_edit</i></a>}</div> </li>)}
                         </ul>
                     </div>
                 </div>
                 <div id="modal1" className="modal">
                     <div className="modal-content">
-                        <Evaluations currentEvals={this.state.evaluations} course={this.props.state.course.title} fieldName={this.state.fieldName} changeGrade={this.changeGrade} error={this.state.errorMessage} submit={this.submitGrades} field={this.state.fieldType}/>
+                        <Evaluations currentEvals={this.state.evaluations} course={this.props.state.course} fieldName={this.state.fieldName} changeGrade={this.changeGrade} error={this.state.errorMessage} submit={this.submitGrades} field={this.state.fieldType}/>
                     </div>
                 </div>
                 <div id="modal2" className="modal">
                     <div className="modal-content">
-                        <Evaluations currentEvals={this.state.evaluations} course={this.props.state.course.title} fieldName={this.state.fieldName} changeGrade={this.changeGrade} error={this.state.errorMessage} submit={this.submitGrades} field={this.state.fieldType} />
+                        <Evaluations global={true} currentEvals={this.state.evaluations} course={this.props.state.course} fieldName={this.state.fieldName} changeGrade={this.changeGrade} error={this.state.errorMessage} submit={this.submitGrades} field={this.state.fieldType} />
                     </div>
                 </div>
 

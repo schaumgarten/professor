@@ -94,26 +94,42 @@ class CourseForm extends Component {
 
         return(
             <div>
+
                <form onSubmit={this.handleSubmitClick}>
-                    <label>
-                        Course title:
-                        <input type="text" name="title" onChange={this.handleChange}/>
-                    </label>
-                   <button className="btn" onClick={this.addField}>Add new evaluation field</button>
-                   {this.state.evalFields.length > 0 ? this.state.evalFields.map((field,index) =>
-                       <div>
-                           <input type="text" onChange={this.handleFieldChange} value={field.name} name={index} key={index}/>
-                           <input type = "number"  onChange={this.handleFieldChange} value={field.percentage} name={index} key={index + "b"}/ >
+                   <h4 className="red-text">Create New Course</h4>
+                   <ul className="collection">
+                       <li className="collection-item">
+                           <div>
+                               <h5>Course name:</h5>
+                               <input type="text" name="title" onChange={this.handleChange}/>
+                           </div>
+                           <button className="btn blue-background" onClick={this.addField}>Add new evaluation field</button>
+                       </li>
+                       {this.state.evalFields.length > 0 ? this.state.evalFields.map((field,index) =>
+                       <li className="collection-item">
+                           <div className="row">
+                               <h5 className="col s4">Field:</h5>
+                               <input className="col s6" type="text" onChange={this.handleFieldChange} value={field.name} name={index} key={index}/>
+                           </div>
+                           <div className="row">
+                               <h5 className="col s6">Value (in percentage: %)</h5>
+                               <input className="col s4" type = "number"  onChange={this.handleFieldChange} value={field.percentage} name={index} key={index + "b"}/ >
+                           </div>
+
+
                            <label>
                                <input name={index} key={index + 'c'} type = "checkbox" onChange={this.handleToggleCheck} checked={field.inSession ? true : false}/>
                                <span>In-session evaluation?</span>
                            </label>
 
-                       </div>
+                       </li>
 
-                   ) : console.log('perro') }
-                    <button type="submit"  className={`btn ${this.state.ready}`} >Create</button>
-                    <Link to="/profile"><button className="btn modal-close">Cancel</button></Link>
+                   ) : null }
+                   </ul>
+
+
+                    <button type="submit"  className={`btn red-background ${this.state.ready}`} >Create</button>
+                    <Link to="/profile"><button className="btn red-background modal-close">Cancel</button></Link>
                 </form>
                    {this.state.error ? <p className="red-text">{this.state.error}</p> : null}
 

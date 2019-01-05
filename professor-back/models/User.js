@@ -19,7 +19,8 @@ const userSchema = new Schema({
         enum: ['professor','student','admin'],
         default: 'student'
     },
-    profilePic: String,
+    toDo: Array
+
 
 });
 

@@ -21,16 +21,18 @@ class StudentProfile extends Component {
         console.log(this.props.courses);
         return(
             <div>
-                <h1>{this.props.user.name}</h1>
-                <ul>
-                    {this.props.courses.map((course, index) => <li key={index}> <strong> {course._course.title} </strong> Professor:  {course._course._professor.name} </li>)}
-                </ul>
-                <Link to='/catalog' > Course Catalog </Link>
-                {/*<Link
-                    to={{
-                        pathname: '/catalog',
-                        state: { enrolledCourses: this.state.enrolledCourses }
-                    }}> Course Catalog </Link>*/}
+                <h1 className="center-align red-text">Welcome, {this.props.user.name}</h1>
+                <div className="row">
+                    <div className="col l4 m6 s12 push-l4 push-m2">
+                        <ul className="collection with-header hoverable">
+                            <li className="collection-header"><h4 className="blue-text-mine">Courses</h4></li>
+                            {this.props.courses.map((course, index) => <li className="collection-item" key={index}> <strong> {course._course.title} </strong> Professor:  {course._course._professor.name} </li>)}
+                           <li className="collection-item"><Link to='/catalog' > Course Catalog </Link></li>
+                        </ul>
+
+                    </div>
+                </div>
+
             </div>
 
         )

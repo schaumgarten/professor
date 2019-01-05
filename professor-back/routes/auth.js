@@ -18,13 +18,11 @@ router.post('/register',(req, res) => {
         })
         .catch(err => {
             res.status(500).json({err, msg: "No se pudo crear"})
-            console.log("Cual es: ",err)
         })
 });
 
 router.post('/login', async(req,res)=> {
     const user = await User.findOne({email: req.body.email});
-    console.log(user);
     if (!user) return res.status(404).json({msg: "Email no es válido"});
     let validPassword = bcrypt.compareSync(req.body.password, user.password);
     if (!validPassword) return;

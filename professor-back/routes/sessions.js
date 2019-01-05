@@ -25,6 +25,17 @@ router.get('/all/:id',(req, res) => {
         })
 });
 
+router.get('/day/:date', (req, res) => {
+    Session.find({"date" : req.params.date})
+        .populate('_course')
+        .then(sessions => {
+            res.status(200).json({sessions});
+        })
+        .catch(err => {
+            res.status(500).json({err, msg: "algo no sirve"})
+        })
+});
+
 router.get('/:id', (req, res) => {
     Session.findById(req.params.id)
         .then(session => {
