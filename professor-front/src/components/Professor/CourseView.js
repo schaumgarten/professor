@@ -23,7 +23,7 @@ class CourseView extends Component {
     }
 
      componentWillMount() {
-        console.log('id ',this.props.state.course._id);
+        //console.log('id ',this.props.state.course._id);
         getSessions(this.props.state.course._id)
             .then((res) => {
                 this.setState({sessions: res.data.sessions})
@@ -114,7 +114,7 @@ class CourseView extends Component {
 
     uploadEvaluations = (field,type) => {
         const search = (type === "course" ?  field.name :  field._id);
-;       console.log(search);
+;       //console.log(search);
         axios.get(`http://professor2018.herokuapp.com/api/evaluations/${type}/${search}`)
             .then(res => {
                 let evaluations = {};

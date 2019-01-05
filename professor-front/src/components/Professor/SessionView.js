@@ -62,14 +62,14 @@ class SessionView extends Component {
 
     uploadEvaluations = (field,type) => {
         const search = (type === "course" ?  field.name :  field._id);
-               console.log(search);
+               //console.log(search);
         axios.get(`http://professor2018.herokuapp.com/api/evaluations/${type}/${search}`)
             .then(res => {
                 const evaluations = res.data.eval.filter(evaluation => {
                     return evaluation._session === this.props.state.session._id
                 });
                 this.setState({evaluations, fieldName:field.name, errorMessage:'',fieldType:type})
-                console.log(this.state.evaluations)
+                //console.log(this.state.evaluations)
             })
             .catch(err => {
                 console.log(err);

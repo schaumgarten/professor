@@ -83,7 +83,7 @@ class CourseForm extends Component {
     handleSubmit = () => {
         const {title, evalFields} = this.state;
         const user = JSON.parse(localStorage.getItem('user'));
-        console.log(this.state.ready);
+        //console.log(this.state.ready);
         createCourse(title,user, evalFields)
             .then(()=> {
                 this.props.uploadState()

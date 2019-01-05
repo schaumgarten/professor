@@ -33,7 +33,7 @@ class Catalog extends Component {
                 this.setState({courses:res.data.courses})
 
             });
-        console.log(this.state)
+        //console.log(this.state)
 
 
 

@@ -26,7 +26,7 @@ class Profile extends Component {
     uploadState = () => {
         this.getCourses()
             .then(() => {
-                console.log(this.props)
+                //console.log(this.props)
                 const {user, courses} = this.state;
                 //const {ownedCourses} = this.state;
                 const ownedCourses = [];
@@ -34,7 +34,7 @@ class Profile extends Component {
                     if (course._professor === user._id) ownedCourses.push(course)
                 });
                 this.setState({ownedCourses})
-                console.log(ownedCourses)
+                //console.log(ownedCourses)
             })
 
     };
@@ -46,7 +46,7 @@ class Profile extends Component {
 
         return getCourses(currentUser._id)
             .then(res => {
-                console.log("res", res)
+                //console.log("res", res)
                 this.setState({courses:res.data.courses, user: currentUser});
             })
 

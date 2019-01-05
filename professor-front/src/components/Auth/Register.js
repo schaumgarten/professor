@@ -26,7 +26,7 @@ class Register extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state.user);
+        //console.log(this.state.user);
         register(this.state.user, this.props.history);
     };
 
