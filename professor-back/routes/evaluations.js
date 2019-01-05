@@ -16,6 +16,7 @@ router.post('/new', (req, res) => {
 
 router.get('/student/:id',(req, res) => {
     Evaluation.find({"_student": req.params.id})
+        .populate("_session")
         .then(eval => {
             eval.forEach(eval => {
                 console.log(eval.evaluationType, eval.grade);
@@ -28,7 +29,18 @@ router.get('/student/:id',(req, res) => {
 });
 
 router.get('/course/:id', (req, res) => {
-    Evaluation.find({"_course": req.params.id})
+    Evaluation.find({"evaluationType": req.params.id})
+        .populate('_student')
+        .then(eval => {
+            res.status(200).json({eval});
+        })
+        .catch(err => {
+            res.status(500).json({err, msg: "algo no sirve"})
+        })
+});
+
+router.get('/sessions/:id',(req, res) => {
+    Evaluation.find({"_session": req.params.id})
         .then(eval => {
             res.status(200).json({eval});
         })

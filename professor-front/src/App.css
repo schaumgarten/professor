@@ -43,6 +43,10 @@
   background-color: #ae2e28;
 }
 
+.yellow-background {
+  background-color: #e3b505;
+}
+
 .yellow-text{
   color: #e3b505;
 }
@@ -67,10 +71,22 @@
   height: 50%;
 }
 
+.margin-top{
+  margin-top: 5px;
+}
+
 .bordered{
   border-width: 1px ;
   border-color: white;
   border-style: solid;
+}
+
+.scroll{
+  overflow: scroll;
+  max-height: 75vh;
+}
+a.disabled {
+  pointer-events: none;
 }
 
 .container2 {
@@ -99,3 +115,4 @@ label{
 width: 10% !important;
 
 }
+

@@ -26,8 +26,8 @@ router.patch('/confirm/:id',(req,res) => {
         })
 });
 
-router.delete('delete/:id',(req, res) => {
-    Enrollment.findByIdAndRemove(req.params.id)
+router.delete('/:id',(req, res) => {
+    Enrollment.findOneAndRemove({"_student": req.params.id})
         .then(()=> {
             res.status(200).json({msg:"Inscripción eliminada"});
         })

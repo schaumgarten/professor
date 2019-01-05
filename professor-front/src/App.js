@@ -7,7 +7,9 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state={
-            course:{}
+            course:{},
+            session: {},
+            students: []
         }
     }
 
@@ -15,9 +17,13 @@ class App extends Component {
         this.setState({course})
     };
 
+    changeSessionData = (session,students) => {
+        this.setState({session,students})
+    };
+
     render() {
     return (
-      <Router state={this.state} change={this.changeTargetCourse}/>
+      <Router state={this.state} change={this.changeTargetCourse} changeSession={this.changeSessionData}/>
     );
   }
 }

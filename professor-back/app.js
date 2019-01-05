@@ -11,6 +11,7 @@ const path         = require('path');
 const cors = require('cors');
 
 mongoose
+    //.connect('mongodb://localhost/professor-back', {useNewUrlParser: true})
   .connect(process.env.DBname, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)

@@ -18,11 +18,11 @@ class Home extends Component {
                                 <h1 className=" header center blue-text ">Professor</h1>
                                 <div className="row center">
                                     {/*<img className="row center bordered" src="logo-professor.png" alt=""/>*/}
-                                    <h5 className="header col s12 light dark-text">A practical web-app for administrating teaching-related tasks</h5>
+                                    <h5 className="header col s12 light dark-text">A practical web-app for administering teaching-related tasks</h5>
                                 </div>
                                 <div className="row center">
                                     <Link to="/register" id="download-button"
-                                       className="btn-large waves-effect waves-light red-background lighten-1">Get Started</Link>
+                                       className="btn-large waves-effect waves-red red-background lighten-1">Get Started</Link>
                                 </div>
                                 <br/><br/>
 

@@ -5,8 +5,8 @@ const Session = require('../models/Session');
 
 router.post('/new', (req, res) => {
     Session.create(req.body)
-        .then(()=> {
-            res.status(200).json({msg: "Sesión creada con éxito"})
+        .then((session)=> {
+            res.status(200).json({msg: "Sesión creada con éxito",session})
 
         })
         .catch(err => {
@@ -14,8 +14,9 @@ router.post('/new', (req, res) => {
         })
 });
 
-router.get('/',(req, res) => {
-    Session.find()
+router.get('/all/:id',(req, res) => {
+    Session.find({"_course" : req.params.id})
+        .populate("attendance._student")
         .then(sessions => {
             res.status(200).json({sessions});
         })

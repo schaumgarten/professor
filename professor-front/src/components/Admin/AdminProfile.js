@@ -14,7 +14,7 @@ class AdminProfile extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:3000/api/auth/`)
+        axios.get(`http://professor2018.herokuapp.com/api/auth/`)
             .then(res => {
                 let users = res.data.users;
                 this.setState({users});

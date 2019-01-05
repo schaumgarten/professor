@@ -7,9 +7,11 @@ const sessionSchema = new Schema({
         ref: 'Course'
     },
     date: Date,
+    dateString: String,
     activities: Array,
     materials: Array,
     attendance: [{
+        _id: false,
         _student: {
             type: Schema.Types.ObjectId,
             ref: 'User'
